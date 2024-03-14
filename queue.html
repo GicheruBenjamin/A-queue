@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        /*Fonts*/
+        @import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700;800&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+        /*root*/
+        :root{
+            --bgc:#416D19;
+            --sc1:#9BCF53;
+            --sc2:#BFEA7C;
+            --txt: #FFF67E;
+            --f1: 'Rubik', sans-serif;
+            --f2: 'Montserrat', sans-serif;
+            --f3: 'Raleway', sans-serif;
+            font-size: 10px;/*To base 10*/
+        }
+        body{
+            margin: 0;
+            padding: 0;
+        }
+        header{
+            background: #000;
+            color: white;
+            h2{
+                text-align: center;
+                letter-spacing: .4rem;
+                word-spacing: 1.2rem;
+                font-weight: 800;
+                font-family: var(--f3);
+                font-size: max(1.6rem, 2.3rem);
+                font-style: oblique;
+            }
+        }
+        main{
+            height: 75vh;
+            padding: 1,5rem;
+            display: grid;
+            grid-template-rows: 25% 70% 25%;
+            align-items: center;
+            justify-items: center;
+            div{
+                box-sizing: border-box;
+                text-align: center;
+                height: 90%;
+                width: 80%;
+                p{
+                    font-size: max(1.5rem,1.8rem);
+                    font-weight: 600;
+                    font-family: var(--f2);
+                    letter-spacing: .28rem;
+                }
+            }
+        }
+    </style>
+    <link rel="stylesheet" href="queue.css">
+    <title>A Queue</title>
+</head>
+<body>
+    <header><h2>A Queue</h2></header>
+    <main>
+        <div class="enDiv">
+            <p>If U want something, to eat enter in the line.</p>
+            <button id="enBtn">Enter the Queue</button>
+        </div>
+        <div class="lineShow">
+            <div id="lineS"></div>
+            <div id="kitchen">
+                <span class="frontwall">
+                    <span class="door"></span>
+                </span>
+                <span class="sidewall"></span>
+                <span class="roof"></span>
+            </div>
+            <div id="goOut"></div>
+        </div>
+        <div class="deDiv">
+            <p>Now that you are full go home</p>
+            <button id="deBtn">Go home</button>
+        </div>
+    </main>
+</body>
+</html>

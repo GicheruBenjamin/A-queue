@@ -1,0 +1,81 @@
+
+ /*Fonts*/
+ @import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700;800&display=swap');
+ @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
+ @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+ /*root*/
+ :root{
+     --bgc:#416D19;
+     --sc1:#9BCF53;
+     --sc2:#BFEA7C;
+     --txt: #FFF67E;
+     --f1: 'Rubik', sans-serif;
+     --f2: 'Montserrat', sans-serif;
+     --f3: 'Raleway', sans-serif;
+     font-size: 10px;/*To base 10*/
+ }
+
+.enDiv{
+    background-color: aqua;
+    border: .2rem red solid;
+    border-radius: 6px;
+    button{
+        background-color: black;
+        color: white;
+        border: 1.5px white solid;
+        border-radius: .6rem;
+        padding: .4rem;
+        text-decoration: underline;
+        word-spacing: .5rem;
+        letter-spacing: .15rem;
+        font-family: var(--f1);
+        font-weight: 600;
+        font-size: max(1.2rem,2rem);
+        font-style: oblique;
+    }
+}
+.lineShow{
+    background-color: lightpink;
+    width: 95vw;
+    margin: .2rem;
+}
+.deDiv{
+    background-color: aqua;
+    border: .2rem red solid;
+    border-radius: 6px;
+    button{
+        background-color: black;
+        color: white;
+        border: 1.5px white solid;
+        border-radius: .6rem;
+        padding: .4rem;
+        text-decoration: underline;
+        word-spacing: .5rem;
+        letter-spacing: .15rem;
+        font-weight: 600;
+        font-size: max(1.2rem,2rem);
+        font-style: oblique;
+    }
+}
+
+.lineShow{
+    background-color: whitesmoke;
+    padding: 0;
+    display: flex;
+}
+#lineS{
+    width: 64%;
+    height: 100%;
+    background-color: chartreuse;
+}
+#kitchen{
+    width: 28%;
+    height: 100%;
+    background-color: yellow;
+}
+#goOut{
+    width: 17%;
+    height: 100%;
+    background-color: coral;
+}
